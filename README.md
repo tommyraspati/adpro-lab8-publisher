@@ -22,3 +22,6 @@ This setup is typical for development environments, prioritizing simplicity and 
 ![messageImage_1713946427712](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/63979cf9-4e63-41ce-a9e4-7f45a3e3dedc)
 When you run a subscriber and then a publisher, you'll see this message in the subscriber terminal. This shows that the publisher successfully sent data to the subscriber through RabbitMQ. The publisher sends data to an exchange. The exchange then routes the message to the appropriate queue based on the binding. The queue temporarily stores the message. The subscriber then waits for messages in the queue and processes them as needed.
 
+![gambar](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/957dec5d-3b93-4591-973d-7e16e180a022)
+The graph above shows an increase in the number of messages sent over a certain interval of time. The second spike is higher than the first spike because during that time range, I ran the publisher more frequently than in the previous time range, resulting in more messages being sent in the second interval than in the previous one.
+
