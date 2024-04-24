@@ -25,3 +25,7 @@ When you run a subscriber and then a publisher, you'll see this message in the s
 ![gambar](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/957dec5d-3b93-4591-973d-7e16e180a022)
 The graph above shows an increase in the number of messages sent over a certain interval of time. The second spike is higher than the first spike because during that time range, I ran the publisher more frequently than in the previous time range, resulting in more messages being sent in the second interval than in the previous one.
 
+![gambar](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/daadb8de-5c8c-4a07-bd68-601646dab9d5)
+The graph above indicates that there were 10 messages in the queue at one point. This occurred because the subscriber's speed in consuming data from the queue was slower than the speed at which messages were incoming. As a result, messages remained in the queue until the subscriber consumed them.
+
+
