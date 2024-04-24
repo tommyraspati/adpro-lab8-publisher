@@ -17,3 +17,8 @@ The URL "amqp://guest:guest@localhost:5672" being the same in both publisher and
 - **Shared Messaging Environment**: Using the same URL ensures that both the publisher and the subscriber are interacting with the same message broker environment, essential for the messages sent by the publisher to be received by the subscriber correctly.
 
 This setup is typical for development environments, prioritizing simplicity and ease of configuration. In production environments, different credentials and possibly different server setups are common to enhance security and scalability.
+
+
+![messageImage_1713946427712](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/63979cf9-4e63-41ce-a9e4-7f45a3e3dedc)
+When you run a subscriber and then a publisher, you'll see this message in the subscriber terminal. This shows that the publisher successfully sent data to the subscriber through RabbitMQ. The publisher sends data to an exchange. The exchange then routes the message to the appropriate queue based on the binding. The queue temporarily stores the message. The subscriber then waits for messages in the queue and processes them as needed.
+
