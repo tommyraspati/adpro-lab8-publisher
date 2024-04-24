@@ -28,4 +28,6 @@ The graph above shows an increase in the number of messages sent over a certain 
 ![gambar](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/daadb8de-5c8c-4a07-bd68-601646dab9d5)
 The graph above indicates that there were 10 messages in the queue at one point. This occurred because the subscriber's speed in consuming data from the queue was slower than the speed at which messages were incoming. As a result, messages remained in the queue until the subscriber consumed them.
 
-
+![gambar](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/e1c43d5b-2ca6-41b8-b2d1-587f019cabb4)
+![gambar](https://github.com/tommyraspati/adpro-lab8-publisher/assets/89284213/5bc901e6-5984-409b-b00c-a273e9466069)
+In this scenario, I ran the publisher command with the same amount as before but with 3 subscribers consuming these messages. As shown in the graph, the number of messages in the queue decreased more rapidly than in the previous case. This is because there are more subscribers consuming the messages sent by the publisher, resulting in the number of messages in the queue waiting to be consumed decreasing more quickly.
